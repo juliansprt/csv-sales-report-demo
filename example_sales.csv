@@ -1,0 +1,18 @@
+order_id,date,customer,amount,currency,status
+FICT-001,2026-10-01,Cliente ficticio A,125.50,USD,paid
+FICT-002,2026-10-01,Cliente ficticio B,74.25,USD,paid
+FICT-003,2026-10-02,Cliente ficticio C,350000,COP,paid
+FICT-004,2026-10-02,Cliente ficticio D,40.00,USD,pending
+FICT-005,2026-10-03,Cliente ficticio E,20.00,USD,refunded
+FICT-006,2026-10-03,Cliente ficticio F,80.00,USD,paid
+FICT-006,2026-10-03,Cliente ficticio F repetido,80.00,USD,paid
+FICT-007,2026-02-30,Cliente ficticio G,12.00,USD,paid
+FICT-008,2026-10-04,Cliente ficticio H,NaN,USD,paid
+FICT-009,2026-10-04,Cliente ficticio I,-5.00,USD,paid
+FICT-010,2026-10-05,Cliente ficticio J,10.00,usd,paid
+FICT-011,2026-10-05,<script>alert('FICTICIO')</script> & ejemplo,0.25,USD,paid
+FICT-012,2026-10-05,"Cliente ficticio
+con nombre multilínea",150000.50,COP,paid
+FICT-013,2026-10-06,Cliente ficticio K,18.00,EUR,cancelled
+FICT-014,2026-10-06,Cliente ficticio L,9.00,USD,unknown
+FICT-015,2026-10-06,Cliente ficticio M,9.00,USD,paid,campo extra ficticio

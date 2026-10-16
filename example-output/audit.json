@@ -1,0 +1,406 @@
+{
+  "demonstration": true,
+  "notice": "DEMOSTRACIÓN / DATOS FICTICIOS. No son ingresos reales.",
+  "records": 16,
+  "accepted": 8,
+  "rejected": 8,
+  "accepted_by_status": {
+    "paid": 5,
+    "pending": 1,
+    "refunded": 1,
+    "cancelled": 1
+  },
+  "duplicate_ids": {
+    "FICT-006": 2
+  },
+  "paid_by_currency": {
+    "COP": {
+      "count": 2,
+      "total": "500000.50"
+    },
+    "USD": {
+      "count": 3,
+      "total": "200.00"
+    }
+  },
+  "source_columns": [
+    "order_id",
+    "date",
+    "customer",
+    "amount",
+    "currency",
+    "status"
+  ],
+  "source": "example_sales.csv",
+  "rows": [
+    {
+      "record": 1,
+      "line_start": 2,
+      "line_end": 2,
+      "raw": [
+        "FICT-001",
+        "2026-10-01",
+        "Cliente ficticio A",
+        "125.50",
+        "USD",
+        "paid"
+      ],
+      "values": {
+        "order_id": "FICT-001",
+        "date": "2026-10-01",
+        "customer": "Cliente ficticio A",
+        "amount": "125.50",
+        "currency": "USD",
+        "status": "paid"
+      },
+      "reasons": []
+    },
+    {
+      "record": 2,
+      "line_start": 3,
+      "line_end": 3,
+      "raw": [
+        "FICT-002",
+        "2026-10-01",
+        "Cliente ficticio B",
+        "74.25",
+        "USD",
+        "paid"
+      ],
+      "values": {
+        "order_id": "FICT-002",
+        "date": "2026-10-01",
+        "customer": "Cliente ficticio B",
+        "amount": "74.25",
+        "currency": "USD",
+        "status": "paid"
+      },
+      "reasons": []
+    },
+    {
+      "record": 3,
+      "line_start": 4,
+      "line_end": 4,
+      "raw": [
+        "FICT-003",
+        "2026-10-02",
+        "Cliente ficticio C",
+        "350000",
+        "COP",
+        "paid"
+      ],
+      "values": {
+        "order_id": "FICT-003",
+        "date": "2026-10-02",
+        "customer": "Cliente ficticio C",
+        "amount": "350000",
+        "currency": "COP",
+        "status": "paid"
+      },
+      "reasons": []
+    },
+    {
+      "record": 4,
+      "line_start": 5,
+      "line_end": 5,
+      "raw": [
+        "FICT-004",
+        "2026-10-02",
+        "Cliente ficticio D",
+        "40.00",
+        "USD",
+        "pending"
+      ],
+      "values": {
+        "order_id": "FICT-004",
+        "date": "2026-10-02",
+        "customer": "Cliente ficticio D",
+        "amount": "40.00",
+        "currency": "USD",
+        "status": "pending"
+      },
+      "reasons": []
+    },
+    {
+      "record": 5,
+      "line_start": 6,
+      "line_end": 6,
+      "raw": [
+        "FICT-005",
+        "2026-10-03",
+        "Cliente ficticio E",
+        "20.00",
+        "USD",
+        "refunded"
+      ],
+      "values": {
+        "order_id": "FICT-005",
+        "date": "2026-10-03",
+        "customer": "Cliente ficticio E",
+        "amount": "20.00",
+        "currency": "USD",
+        "status": "refunded"
+      },
+      "reasons": []
+    },
+    {
+      "record": 6,
+      "line_start": 7,
+      "line_end": 7,
+      "raw": [
+        "FICT-006",
+        "2026-10-03",
+        "Cliente ficticio F",
+        "80.00",
+        "USD",
+        "paid"
+      ],
+      "values": {
+        "order_id": "FICT-006",
+        "date": "2026-10-03",
+        "customer": "Cliente ficticio F",
+        "amount": "80.00",
+        "currency": "USD",
+        "status": "paid"
+      },
+      "reasons": [
+        "order_id duplicado 'FICT-006': registros 6, 7; todos excluidos"
+      ]
+    },
+    {
+      "record": 7,
+      "line_start": 8,
+      "line_end": 8,
+      "raw": [
+        "FICT-006",
+        "2026-10-03",
+        "Cliente ficticio F repetido",
+        "80.00",
+        "USD",
+        "paid"
+      ],
+      "values": {
+        "order_id": "FICT-006",
+        "date": "2026-10-03",
+        "customer": "Cliente ficticio F repetido",
+        "amount": "80.00",
+        "currency": "USD",
+        "status": "paid"
+      },
+      "reasons": [
+        "order_id duplicado 'FICT-006': registros 6, 7; todos excluidos"
+      ]
+    },
+    {
+      "record": 8,
+      "line_start": 9,
+      "line_end": 9,
+      "raw": [
+        "FICT-007",
+        "2026-02-30",
+        "Cliente ficticio G",
+        "12.00",
+        "USD",
+        "paid"
+      ],
+      "values": {
+        "order_id": "FICT-007",
+        "date": "2026-02-30",
+        "customer": "Cliente ficticio G",
+        "amount": "12.00",
+        "currency": "USD",
+        "status": "paid"
+      },
+      "reasons": [
+        "date: fecha inválida; use YYYY-MM-DD"
+      ]
+    },
+    {
+      "record": 9,
+      "line_start": 10,
+      "line_end": 10,
+      "raw": [
+        "FICT-008",
+        "2026-10-04",
+        "Cliente ficticio H",
+        "NaN",
+        "USD",
+        "paid"
+      ],
+      "values": {
+        "order_id": "FICT-008",
+        "date": "2026-10-04",
+        "customer": "Cliente ficticio H",
+        "amount": "NaN",
+        "currency": "USD",
+        "status": "paid"
+      },
+      "reasons": [
+        "amount: use decimal no negativo, hasta 18 enteros y 6 decimales"
+      ]
+    },
+    {
+      "record": 10,
+      "line_start": 11,
+      "line_end": 11,
+      "raw": [
+        "FICT-009",
+        "2026-10-04",
+        "Cliente ficticio I",
+        "-5.00",
+        "USD",
+        "paid"
+      ],
+      "values": {
+        "order_id": "FICT-009",
+        "date": "2026-10-04",
+        "customer": "Cliente ficticio I",
+        "amount": "-5.00",
+        "currency": "USD",
+        "status": "paid"
+      },
+      "reasons": [
+        "amount: use decimal no negativo, hasta 18 enteros y 6 decimales"
+      ]
+    },
+    {
+      "record": 11,
+      "line_start": 12,
+      "line_end": 12,
+      "raw": [
+        "FICT-010",
+        "2026-10-05",
+        "Cliente ficticio J",
+        "10.00",
+        "usd",
+        "paid"
+      ],
+      "values": {
+        "order_id": "FICT-010",
+        "date": "2026-10-05",
+        "customer": "Cliente ficticio J",
+        "amount": "10.00",
+        "currency": "usd",
+        "status": "paid"
+      },
+      "reasons": [
+        "currency: se requieren 3 letras mayúsculas"
+      ]
+    },
+    {
+      "record": 12,
+      "line_start": 13,
+      "line_end": 13,
+      "raw": [
+        "FICT-011",
+        "2026-10-05",
+        "<script>alert('FICTICIO')</script> & ejemplo",
+        "0.25",
+        "USD",
+        "paid"
+      ],
+      "values": {
+        "order_id": "FICT-011",
+        "date": "2026-10-05",
+        "customer": "<script>alert('FICTICIO')</script> & ejemplo",
+        "amount": "0.25",
+        "currency": "USD",
+        "status": "paid"
+      },
+      "reasons": []
+    },
+    {
+      "record": 13,
+      "line_start": 14,
+      "line_end": 15,
+      "raw": [
+        "FICT-012",
+        "2026-10-05",
+        "Cliente ficticio\ncon nombre multilínea",
+        "150000.50",
+        "COP",
+        "paid"
+      ],
+      "values": {
+        "order_id": "FICT-012",
+        "date": "2026-10-05",
+        "customer": "Cliente ficticio\ncon nombre multilínea",
+        "amount": "150000.50",
+        "currency": "COP",
+        "status": "paid"
+      },
+      "reasons": []
+    },
+    {
+      "record": 14,
+      "line_start": 16,
+      "line_end": 16,
+      "raw": [
+        "FICT-013",
+        "2026-10-06",
+        "Cliente ficticio K",
+        "18.00",
+        "EUR",
+        "cancelled"
+      ],
+      "values": {
+        "order_id": "FICT-013",
+        "date": "2026-10-06",
+        "customer": "Cliente ficticio K",
+        "amount": "18.00",
+        "currency": "EUR",
+        "status": "cancelled"
+      },
+      "reasons": []
+    },
+    {
+      "record": 15,
+      "line_start": 17,
+      "line_end": 17,
+      "raw": [
+        "FICT-014",
+        "2026-10-06",
+        "Cliente ficticio L",
+        "9.00",
+        "USD",
+        "unknown"
+      ],
+      "values": {
+        "order_id": "FICT-014",
+        "date": "2026-10-06",
+        "customer": "Cliente ficticio L",
+        "amount": "9.00",
+        "currency": "USD",
+        "status": "unknown"
+      },
+      "reasons": [
+        "status: use paid, pending, refunded o cancelled"
+      ]
+    },
+    {
+      "record": 16,
+      "line_start": 18,
+      "line_end": 18,
+      "raw": [
+        "FICT-015",
+        "2026-10-06",
+        "Cliente ficticio M",
+        "9.00",
+        "USD",
+        "paid",
+        "campo extra ficticio"
+      ],
+      "values": {
+        "order_id": "FICT-015",
+        "date": "2026-10-06",
+        "customer": "Cliente ficticio M",
+        "amount": "9.00",
+        "currency": "USD",
+        "status": "paid"
+      },
+      "reasons": [
+        "número de campos: 7; se esperaban 6"
+      ]
+    }
+  ]
+}

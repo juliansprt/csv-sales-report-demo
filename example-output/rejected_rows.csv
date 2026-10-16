@@ -1,0 +1,9 @@
+record,line_start,line_end,reasons,original_fields_json
+6,7,7,"order_id duplicado 'FICT-006': registros 6, 7; todos excluidos","[""FICT-006"", ""2026-10-03"", ""Cliente ficticio F"", ""80.00"", ""USD"", ""paid""]"
+7,8,8,"order_id duplicado 'FICT-006': registros 6, 7; todos excluidos","[""FICT-006"", ""2026-10-03"", ""Cliente ficticio F repetido"", ""80.00"", ""USD"", ""paid""]"
+8,9,9,date: fecha inválida; use YYYY-MM-DD,"[""FICT-007"", ""2026-02-30"", ""Cliente ficticio G"", ""12.00"", ""USD"", ""paid""]"
+9,10,10,"amount: use decimal no negativo, hasta 18 enteros y 6 decimales","[""FICT-008"", ""2026-10-04"", ""Cliente ficticio H"", ""NaN"", ""USD"", ""paid""]"
+10,11,11,"amount: use decimal no negativo, hasta 18 enteros y 6 decimales","[""FICT-009"", ""2026-10-04"", ""Cliente ficticio I"", ""-5.00"", ""USD"", ""paid""]"
+11,12,12,currency: se requieren 3 letras mayúsculas,"[""FICT-010"", ""2026-10-05"", ""Cliente ficticio J"", ""10.00"", ""usd"", ""paid""]"
+15,17,17,"status: use paid, pending, refunded o cancelled","[""FICT-014"", ""2026-10-06"", ""Cliente ficticio L"", ""9.00"", ""USD"", ""unknown""]"
+16,18,18,número de campos: 7; se esperaban 6,"[""FICT-015"", ""2026-10-06"", ""Cliente ficticio M"", ""9.00"", ""USD"", ""paid"", ""campo extra ficticio""]"

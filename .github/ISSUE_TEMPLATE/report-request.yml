@@ -1,0 +1,35 @@
+name: Request a CSV report / Solicitar reporte CSV
+description: Check the scope of a custom CSV report — proposed fixed price USD 125.
+title: "Report request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is PUBLIC. Use fictional data only; do not upload private files or credentials.
+        Esta solicitud es PÚBLICA. Usa datos ficticios; no subas archivos privados ni credenciales.
+        We confirm scope, delivery date and payment before accepting an order. Opening an issue does not place an order.
+  - type: textarea
+    id: input
+    attributes:
+      label: Input / Archivo de entrada
+      description: Describe the source, column names, approximate row count and file size.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected result / Resultado esperado
+      description: What should the report show? Which rows should count as paid sales? How should duplicates be handled?
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Requested deadline / Plazo deseado
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Fictional example / Ejemplo ficticio
+      description: Optional 2–5 invented rows showing the format; no real customer information.
